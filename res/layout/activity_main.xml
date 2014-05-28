@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ tools:context=".MainActivity">
+
+<android.support.v4.view.ViewPager
+ android:id="@+id/pager"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent">   
+</android.support.v4.view.ViewPager>
+
+<ImageView
+    android:id="@+id/droid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView1"
+    android:layout_below="@+id/textView1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="93dp"
+    android:src="@drawable/android" />
+
+<LinearLayout
+    android:id="@+id/LinLay1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:src="@drawable/android" />
+
+        <LinearLayout
+            android:id="@+id/LinLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/browser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/android" />
+
+            <ImageView
+                android:id="@+id/dialer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/android" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/home" />
+
+    </LinearLayout>
+
+<TextView
+    android:id="@+id/time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp"
+    android:text="hh:mm:ss"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="36dip" />
+
+</RelativeLayout>
